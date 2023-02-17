@@ -1,6 +1,6 @@
 <?php 
 /**
- * Template Name: Shop Page
+ * Template Name: Taxonomy Page
  */
 get_header();?>
 <div class="container">
@@ -23,7 +23,7 @@ get_header();?>
                         <div class="d-flex justify-content-center img-thumbnail img-fluid">
                             <?php the_post_thumbnail('thumbnail');?>
                         </div>
-                        <br><p>Department: <?php echo custom_get_terms($post->ID, 'department');?></p>
+                        <p>Department: <?php echo custom_get_terms($post->ID, 'department');?></p>
 
                         <!-- Product details-->
                         <div class="card-body p-4">
@@ -44,7 +44,6 @@ get_header();?>
             <?php endwhile;
         endif;
             
-
         wp_reset_query();
         ?>
                 

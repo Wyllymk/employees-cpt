@@ -84,11 +84,11 @@
         register_taxonomy('department', array('employees'), $args);
         
         //add new taxonomy NOT hierarchical
-        // register_taxonomy('tools', 'employees', array(
-        //     'label' => 'Tools',
-        //     'rewrite' => array('slug' => 'tool'),
-        //     'hierarchical' => false
-        // ));
+        register_taxonomy('tools', 'employees', array(
+            'label' => 'Tools',
+            'rewrite' => array('slug' => 'tool'),
+            'hierarchical' => false
+        ));
     }
 
     
